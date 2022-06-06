@@ -25,5 +25,5 @@ function printCharacter(character, index) {
     console.log(`nickname: ${nickname}
 class: ${cls}
 createdAt: ${createdAt}`);
-}
+};
 characters.forEach(printCharacter);

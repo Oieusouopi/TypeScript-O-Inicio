@@ -1,0 +1,47 @@
+import * as length from './length';
+import * as mass from './mass';
+import * as area from './area';
+import * as capacity from './capacity';
+import * as volume from './volume';
+
+console.log('Conversao de distancia')
+console.log(length.convert(1, 'm', 'km'));
+console.log(length.convert(1, 'm', 'hm'));
+console.log(length.convert(1, 'm', 'dam'));
+console.log(length.convert(1, 'm', 'm'));
+console.log(length.convert(1, 'm', 'dm'));
+console.log(length.convert(1, 'm', 'cm'));
+console.log(length.convert(1, 'm', 'mm'));
+// console.log(convert(1, 'kilo', 'hm'));
+console.log('Conversao de peso')
+console.log(mass.convert(1, 'g', 'kg'));
+console.log(mass.convert(1, 'g', 'hg'));
+console.log(mass.convert(1, 'g', 'dag'));
+console.log(mass.convert(1, 'g', 'g'));
+console.log(mass.convert(1, 'g', 'dg'));
+console.log(mass.convert(1, 'g', 'cg'));
+console.log(mass.convert(1, 'g', 'mg'));
+console.log('Conversao para área');
+console.log(area.convert(1, 'm²', 'km²'));
+console.log(area.convert(1, 'm²', 'hm²'));
+console.log(area.convert(1, 'm²', 'dam²'));
+console.log(area.convert(1, 'm²', 'm²'));
+console.log(area.convert(1, 'm²', 'dm²'));
+console.log(area.convert(1, 'm²', 'cm²'));
+console.log(area.convert(1, 'm²', 'mm²'));
+console.log('conversao para capacidade');
+console.log(capacity.convert(1, 'l', 'kl'));
+console.log(capacity.convert(1, 'l', 'hl'));
+console.log(capacity.convert(1, 'l', 'dal'));
+console.log(capacity.convert(1, 'l', 'l'));
+console.log(capacity.convert(1, 'l', 'dl'));
+console.log(capacity.convert(1, 'l', 'cl'));
+console.log(capacity.convert(1, 'l', 'ml'));
+console.log('Conversao para volume');
+console.log(volume.convert(1, 'm³', 'km³'));
+console.log(volume.convert(1, 'm³', 'hm³'));
+console.log(volume.convert(1, 'm³', 'dam³'));
+console.log(volume.convert(1, 'm³', 'm³'));
+console.log(volume.convert(1, 'm³', 'dm³'));
+console.log(volume.convert(1, 'm³', 'cm³'));
+console.log(volume.convert(1, 'm³', 'mm³'));

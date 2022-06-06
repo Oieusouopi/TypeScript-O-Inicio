@@ -1,6 +1,6 @@
 const unidades: string[] = ['kl','hl','dal','l','dl','cl','ml'];
 
-const error = (unidade: string) => {
+const error = (unidade: string): never => {
     throw new Error(`Unidade ${ unidade } é invalida`);
 };
 

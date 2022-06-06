@@ -1,6 +1,6 @@
 const unidades: string[] = ['kg','hg','dag','g','dg','cg', 'mg'];
 
-const error = (unidade: string) => {
+const error = (unidade: string):never => {
     throw new Error(`Esta unidade ${ unidade } é invalida`);
 };
 

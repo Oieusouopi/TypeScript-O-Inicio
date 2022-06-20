@@ -7,7 +7,12 @@ class tv {
         this.connections = connections;
         this.connectedTo = null;
     }
+    getConnectedTo() {
+        return this.connectedTo;
+    }
     setConnectedTo(connectedTo) {
+        if (connectedTo < 0)
+            console.log('Sorry, connection unavailable!');
         this.connectedTo = connectedTo;
     }
     turnOn() {
@@ -16,5 +21,6 @@ class tv {
 }
 const consul = new tv('consul', 158, '720p', ['HDMI', 'Ethernet', 'USB']);
 consul.turnOn();
-consul.setConnectedTo('Ethernet');
+consul.setConnectedTo(0);
 consul.turnOn();
+consul.setConnectedTo(-1);

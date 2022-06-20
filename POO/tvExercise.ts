@@ -1,9 +1,9 @@
 class tv {
-    brand: string;
-    size: number;
-    resolution: string;
-    connections: string[];
-    connectedTo: string | null;
+    private brand: string;
+    private size: number;
+    private resolution: string;
+    private connections: string[];
+    private connectedTo: number | null;
 
     constructor(brand: string, size: number, resolution: string, connections: string[]) {
         this.brand = brand;
@@ -13,7 +13,12 @@ class tv {
         this.connectedTo = null;
     }
     
-    setConnectedTo(connectedTo: string) {
+    getConnectedTo() {
+        return this.connectedTo;
+    }
+
+    setConnectedTo(connectedTo: number) {
+        if(connectedTo < 0) console.log('Sorry, connection unavailable!');
         this.connectedTo = connectedTo;
     }
 
@@ -24,5 +29,6 @@ class tv {
 
 const consul = new tv('consul', 158, '720p', ['HDMI', 'Ethernet', 'USB'] );
 consul.turnOn();
-consul.setConnectedTo('Ethernet');
+consul.setConnectedTo(0);
 consul.turnOn();
+consul.setConnectedTo(-1);

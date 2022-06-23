@@ -1,4 +1,4 @@
-class client {
+class Client {
     private _name: string;
 
     constructor(name: string) {
@@ -6,4 +6,4 @@ class client {
     }
 }
 
-export default client;
+export default Client;

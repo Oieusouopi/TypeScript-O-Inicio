@@ -1,4 +1,4 @@
-class item {
+class Item {
     private _productName: string;
     private _price: number;
     
@@ -10,4 +10,4 @@ class item {
     public get getPrice() { return this._price };
 }
 
-export default item;
+export default Item;
